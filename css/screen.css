@@ -18,11 +18,18 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Optimal Typographic Rendering */
 html {
+  /*commented out rpk items but left for reference in case needed
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  */
+  background-color: black;
+  font-family: "fahkwang", helvetica, arial, sans-serif;
+  margin-left: 4em;
+  margin-right: 4em;
+  padding: 0.5em;
 }
 
 /* Responsive Media */
