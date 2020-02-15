@@ -1,123 +1,17 @@
 <!DOCTYPE html>
-<!--
-  Valid HTML opens with the DOCTYPE declaration above; avoid comments before that line to
-  prevent older browsers from rendering in quirks mode. See Chapter 11.
--->
 
-<!--
-  HTML opens with the `<html>` tag. The RPK’s includes a `lang` attribute that should use
-  the 2-digit ISO code that describes the language the majority of the page is written in.
-  `en` is for English. Fuller discussion in Chapter 11. Other language codes can be found
-  at https://www.loc.gov/standards/iso639-2/php/code_list.php.
+<html lang="en">
 
-  The `class` of `nojs` is a placeholder class, used for styling pages where JavaScript is
-  not active. The RPK JavaScript file, `js/site.js`, swaps out `nojs` (no JavaSCript) with
-  `hasjs` (has JavaScript). See Chapter
-
-  Finally, the `id` attribute should be changed for the domain where a page is hosted.
-  `example-com` would be for `example.com`. The id on the book’s companion site is
-  `webpg-es`, for `webpg.es`. That `id` is known as a CSS signature, and can be referenced
-  by users who use custom stylesheets to modify how their browsers render a particular
-  site. The technique was described in Andy Clarke’s book *Transcending CSS*.
--->
-<html lang="en" class="nojs" id="example-com">
-
-<!--
-  Next, the `<head>` tag opens, and uses the RDFa `prefix` attribute to set a namespace,
-  `og`, for the Facebook Open Graph Protocol (OGP) metadata. If you do not use OGP, you
-  can remove the `prefix` attribute-value pair.
-
-  If you decide to use OGP elsewhere in your document, the `prefix` attribute should be
-  moved to the `<html>` tag.
-
-  See Chapter 25 for more on OGP as well as the OGP documentation at http://ogp.me/
--->
-<head prefix="og: http://ogp.me/ns#">
-
-  <!--
-    Every complete page should open with a <title> tag. This uses a simple, accessible
-    colon to divide the page title from the site name. See Chapter 16 for the discussion
-    on separators and whether to place the page title or site name first for your site.
-  -->
-  <title>Page Title: Site Name</title>
-
-  <!--
-    The `meta` tag with the `charset` attribute sets the encoding of the page to UTF-8, or
-    Universal Transformation Format, 8-bit. See Chapter 10 for a discussion of UTF-8 and
-    the need to encode your HTML files in your editor as UTF-8.
-  -->
+<head>
   <meta charset="utf-8" />
-
-  <!--
-    The viewport meta element below instructs capable mobile browsers to display your page
-    in a mobile-friendly way. See the complete discussion of the viewport meta element in
-    Chapter 14.
-  -->
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-
-  <!--
-    Two `<link>` tags here load the screen and print CSS files.
-
-    Note that both `<link>` tags are using root-relative paths to the files. If you have
-    control over your site's root directory or are using a proper local development
-    server, like the `http-server` that can be installed with Node.js, root-relative paths
-    will work anywhere in your site.
-
-    If you need to use relative links, remove the opening slash from `/css/`. For example:
-
-      <link rel="stylesheet" media="screen" href="css/screen.css" />
-
-    If you need a relative link that references your CSS file from a subdirectory off of
-    your site root, you’ll need to add `../`. For example, an HTML file in the
-    `/site/about/` directory would reference a CSS file in `/site/css/`` like this:
-
-      <link rel="stylesheet" media="screen" href="../css/screen.css" />
-
-    For more about paths, see Chapter 21. CSS is discussed in Chapter 12, and in detail in
-    Chapters 17, 18, and 19.
-  -->
+  <meta name="viewport" content="width=device,width,initial-scale=1.0,shrink-to-fit=no" />
+  <title>Barbara J. Szabo: Main</title>
+  <link rel="stylesheet" href="screen.css" />
+  <link href="https://fonts.googleapis.com/css?family=Fahkwang:400,700|Sansita&display=swap"
+  rel="stylesheet">
   <link rel="stylesheet" media="screen" href="/css/screen.css" />
-  <link rel="stylesheet" media="print" href="/css/print.css" />
-
-  <!--
-    Next comes the basic stack of OGP meta tags. They are commented out in
-    `prototype.html`, and should either be deleted if you opt not to use them, or
-    uncommented by deleting `<!––` above and `––>` below this stack of `<meta>` tags with
-    `property` attributes.
-
-    See Chapter 25 for more on OGP as well as the OGP documentation at http://ogp.me/ for
-    guidance on correctly writing the `content` attributes on each OGP property.
-  -->
-  <!-- Open Graph Protocol Meta Tags: -->
-  <!--
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:image:type" content="" />
-  -->
-
-<!--
-  The `<head>` tag closes here.
--->
 </head>
 
-<!--
-  The `<body>` tag then opens. It will contain all of the content for your page. `<body>`
-  is discussed at length in Chapters 11 and 16.
-
-  If you have a page that requires that are styled differently in a significant way from
-  the majority of your pages, you can add a `class` attribute on body. For example, the
-  home page `<body>` tag can be enhanced like this:
-
-    <body class="home">
-
-  Your CSS can then open any home-page-only styles with the `.home` selector as part of a
-  descendant selector. See Chapter 16 and 18 for guidance on this technique, and Chapter
-  12 for more information on different types of CSS selectors.
--->
 <body>
 
 <!--
@@ -358,4 +252,3 @@
 
 </body>
 </html>
-
