@@ -12,13 +12,16 @@ html {
   margin-right: 4em;
   padding: 0.5em;
 }
+h1,
+h2 {
+  text-align: center;
+}
 h1 {
   color: hotpink;
   font-family: 'Sansita', sans-serif;
   font-size: 3.5em; /*56px / 16 = 3.5em*/
   font-weight: bolder;
   padding-bottom: .25em; /*4px / 16 = 0.25em*/
-  text-align: center;
 }
 h2 {
   color: pink;
@@ -26,7 +29,6 @@ h2 {
   font-weight: bold;
   padding-bottom: 1em;
   padding-top: 1em;
-  text-align: center;
 }
 /* Responsive Media */
 img {
@@ -61,3 +63,10 @@ p {
   padding-bottom: .75em; /*12px / 16 = 0.75em*/
   text-justify: inter-word;
 }
+/*Layouy*/
+@media screen and (min-width: 350em) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    }
+  }
