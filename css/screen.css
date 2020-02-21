@@ -35,16 +35,15 @@ img {
   max-width: 50%;
 }
 .me {
-  width: 50%;
+  width: 100%;
 }
 .about {
+  /*didn't work as expected
   column-width: 200px;
   column-gap: 2em;
-  /*try again later
+  */
   color: red;
   display: flex;
-  flex-wrap: wrap;
-  */
   /*add back in later
   justify-content: flex-end;
   align-items: right;
@@ -62,6 +61,7 @@ img {
 p {
   color: lightslategrey;
   font-size: 1em;
+  /*commented out temporarily
   font-style: normal;
   font-weight: normal;
   line-height: 1.25em; /*20px / 16 = 1.25em*/
