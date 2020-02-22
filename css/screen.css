@@ -36,13 +36,15 @@ h2 {
   padding-top: 1em;
 }
 
-h3 {
+h3,h4 {
   color: yellow;
   font-size: 1em;
   padding-bottom: .5em;
 }
 
-p {
+p,
+ul,
+li {
   color: lightslategrey;
   font-size: 1em;
   font-style: normal;
@@ -51,6 +53,15 @@ p {
   padding-bottom: .75em; /*12px / 16 = 0.75em*/
   text-justify: inter-word;
 }
+li {
+  color: lightslategrey;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.25em; /*20px / 16 = 1.25em*/
+  text-justify: left;
+}
+
 /* Modular styles and Responsive Media */
 
 img {
@@ -69,6 +80,10 @@ img {
   color: blue;
 }
 
+.projects h4 {
+  font-weight: bold;
+  padding-bottom: .5em;
+  padding-top: .5em;
 }
 /*state styles */
 @media screen and (min-width: 350em) {
@@ -76,9 +91,6 @@ img {
     display: grid;
     grid-column-gap: 1em;
     grid-template-columns: auto;
-    }
-  .about {
-    display: flex;
     }
   .about img {
     display: flex;
