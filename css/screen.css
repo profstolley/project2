@@ -34,7 +34,8 @@ h2 {
 img {
   max-width: 50%;
 }
-.me {
+.me,
+.ltg {
   width: 100%;
 }
 .about {
@@ -44,15 +45,15 @@ img {
   */
   color: red;
   display: flex;
+  display; flex-wrap: wrap;
   /*add back in later
   justify-content: flex-end;
   align-items: right;
   */
 }
-.work {
+.lighting {
   color: blue;
   display: flex;
-  flex-wrap: wrap;
   /*add back in later
   justify-content: flex-start;
   align-items: left;
