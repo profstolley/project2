@@ -70,7 +70,8 @@ li {
 /* Modular styles and Responsive Media */
 
 img {
-  max-width: 50%;
+  display: block; /* Don't forget this; it's essential */
+  max-width: 100%; /* Don't play with image widths here. Set a simple max-width: 100% */
 }
 .me,
 .ltg {
@@ -84,19 +85,46 @@ img {
 }
 
 /*state styles */
-main {
+/* I've added a non-existant `pause` class just to keep this from applying, for now: */
+main.pause {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.about {
+/*
+  Your HTML has both a class and an ID. For layout things like this, I prefer to go with
+  an ID, if one exists, because it's specificity is high */
+#about {
   display: flex;
-  flex-direction: row;
-  }
-.about p {
-  flex: 1 0 100px;
-  }
+  flex-wrap: wrap; /* This is for the sake of the h2, which should be on its own line, I'm guessing */
+  align-items: flex-start; /* Prevent certain browsers from stretching your image on the cross/vertical axis */
 }
+
+/*
+  With the flex container set up, we have to turn to the widths and growing/shrinking behavior
+  of all the flex items...
+*/
+
+/*
+  This h2 is a problem, because it probably shouldn't appear to the left
+  of your other content. So I've set it to width: 100% so it takes up the
+  entire flex container.
+
+  Note that situations like this, where particular pieces of content need to appear different from
+  the others, is usually a sign that grid is the better tool.
+*/
+#about h2 {
+  flex: 0 0 auto; /* Don't grow, don't shrink, and size to the width: property on the next line */
+  width: 100%;
+}
+#about img {
+  flex: 1 0 200px; /* Grow, don't shrink, be at least 200px wide */
+}
+#about p {
+  flex: 1 0 100px; /* Grow, don't shrink, be at least 100px wide */
+  margin-left: 20px; /* Introduce a line-height's worth of space to the left of your paragraphs */
+}
+
 /* this worked without media query - tho was not a god set up and would need fixing
 .about {
   display: grid;
