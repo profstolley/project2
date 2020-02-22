@@ -41,24 +41,6 @@ h3 {
   font-size: 1em;
   padding-bottom: .5em;
 }
-/* Responsive Media */
-img {
-  max-width: 50%;
-}
-.me,
-.ltg {
-  width: 100%;
-}
-
-.about {
-  /*add back in later
-  justify-content: flex-end;
-  align-items: right;
-  */
-}
-.lighting {
-  color: blue;
-}
 
 p {
   color: lightslategrey;
@@ -69,10 +51,39 @@ p {
   padding-bottom: .75em; /*12px / 16 = 0.75em*/
   text-justify: inter-word;
 }
-/*Layouy*/
+/* Modular styles and Responsive Media */
+
+img {
+  max-width: 50%;
+}
+.me,
+.ltg {
+  width: 100%;
+}
+
+.about {
+  display: block;
+}
+
+.lighting {
+  color: blue;
+}
+
+}
+/*state styles */
 @media screen and (min-width: 350em) {
   body {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 1em;
+    grid-template-columns: auto;
     }
+  .about {
+    display: flex;
+    }
+  .about img {
+    display: flex;
   }
+  .about p {
+    display: flex;
+  }
+}
