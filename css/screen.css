@@ -36,12 +36,17 @@ h2 {
   padding-top: 1em;
 }
 
-h3,h4 {
+h3 {
   color: yellow;
   font-size: 1em;
   padding-bottom: .5em;
 }
 
+h4 {
+  color: skyblue;
+  font-size: 1.25em;
+  padding-bottom: .5em;
+}
 p,
 ul,
 li {
@@ -72,30 +77,31 @@ img {
   width: 100%;
 }
 
-.about {
-  display: block;
-}
-
-.lighting {
-  color: blue;
-}
-
 .projects h4 {
   font-weight: bold;
   padding-bottom: .5em;
   padding-top: .5em;
 }
+
 /*state styles */
-@media screen and (min-width: 350em) {
-  body {
-    display: grid;
-    grid-column-gap: 1em;
-    grid-template-columns: auto;
-    }
-  .about img {
-    display: flex;
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
   }
-  .about p {
-    display: flex;
+.about p {
+  flex: 1 0 100px;
   }
 }
+/* this worked without media query - tho was not a god set up and would need fixing
+.about {
+  display: grid;
+  margin: 2em;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  }
+  */
