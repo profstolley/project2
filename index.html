@@ -13,51 +13,51 @@
 </head>
 
 <body>
-
-  <header id="header">
-    <nav id="navigation">
-      <ul class="navigation">
-        <li class="accessibility"><a href="#content">Skip to page content</a></li>
-        <!--
-          These two links, to Home and About, use root-relative links. If you need to use
-          relative links, remove the opening slash before `/about/`. The link to `Home`
-          will depend on how you have created the architecture of your site. See Chapter
-          21.
-        -->
-        <li><a href="/">Home</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/work/">Work</a></li>
-        <li><a href="/hobby/">Hobbies</a></li>
-      </ul>
-    </nav>
-    <h1>Barbara J. Szabo</h1>
-  </header>
+<header id="header">
+  <nav id="navigation">
+    <ul class="navigation">
+      <li class="accessibility"><a href="#content">Skip to page content</a></li>
+      <!--
+        These two links, to Home and About, use root-relative links. If you need to use
+        relative links, remove the opening slash before `/about/`. The link to `Home`
+        will depend on how you have created the architecture of your site. See Chapter
+        21.
+      -->
+      <li><a href="/">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#hobby">Hobbies</a></li>
+    </ul>
+  </nav>
+</header>
 
   <main>
+    <h1>Barbara J. Szabo</h1>
     <section id="about">
       <h2>ABOUT</h2>
-        <p class="about"/>
         <img class="me"
           src="/media/usat2019assembly.jpg"
           alt="photo of Barbara and husband, Janos, at a 2019 event">
+          <p>
           I am an electrical designer with experiance in a variety of electrical applications. From commercial to utility/industrial and including lighting, equipment, grounding, fire alarm, and more. I also have some engineering experiance and am gearing my career more towards the engineering aspect of electrical design. I am looking to stay with in the utility and/or commercial industries and utilize my combined design/engineering experiences to explore new opportunites.
         </p>
-        <p class="about">
+        <p>
           In line with my goal of transitioning towars more engineering in my career I've been pursuing a degree in Electrical Engineering with a focus on power systems and distribution. This type of focus falls in line with the experience I already have and the direction I want to go.
+        </p>
     </section>
     <section id="work">
       <h2>Work Experience</h2>
         <h3>Lighting</h3>
-          <p class="lighting"/>
-            I've done lighting design at a variety of types of establishments. This included normal lighting, emergency lighting, task lighting, and decorative lighting. I enjoy lighting design very much.
-            In commercial applications there is a creative aspect to lighting. Beyond layout, there is a measure of enjoyment in choosing fixtures that compliment the architectureal theme of an area. Not to mention choosing colors to compliment or even to contrast, with the surroundings.
-            <img class="ltg"
-              src="/media/lightinglayoutsample.jpg"
-              alt="photo of a portion of a lighting layout I've done at a plant">
-            <img class="ltg"
-              src="/media/lightinglayoutsample2.jpg"
-              alt="photo of a portion of a lighting layout I've done at a casino">
-          </p>
+        <p class="lighting"/>
+          I've done lighting design at a variety of types of establishments. This included normal lighting, emergency lighting, task lighting, and decorative lighting. I enjoy lighting design very much.
+          In commercial applications there is a creative aspect to lighting. Beyond layout, there is a measure of enjoyment in choosing fixtures that compliment the architectureal theme of an area. Not to mention choosing colors to compliment or even to contrast, with the surroundings.
+        </p>
+        <img class="ltg"
+          src="/media/lightinglayoutsample.jpg"
+          alt="photo of a portion of a lighting layout I've done at a plant">
+        <img class="ltg"
+          src="/media/lightinglayoutsample2.jpg"
+          alt="photo of a portion of a lighting layout I've done at a casino">
     </section>
     <section id="hobby">
       <h2>HOBBIES</h2>
@@ -72,7 +72,6 @@
         </p>
     </section>
 
--->
-</main>
+  </main>
 </body>
 </html>
