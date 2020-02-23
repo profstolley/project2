@@ -81,7 +81,7 @@ img {
   padding-top: .5em;
 }
 /*state styles */
-.summary {
+main {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
