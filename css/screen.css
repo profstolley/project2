@@ -88,26 +88,26 @@ img {
 
 /*state styles */
 @media screen and (min-width: 500px) {
-#about,
+/*
 #work,
 #hobby {
   display: grid;
   margin: 2em;
   column-width: 200px;
   column-gap: 2em;
-  }
-#about,
-#work,
-#hobby h2 {
+  }*/
+#summary,
+#experiences,
+#hobbies h2 {
+  flex: 0 0 auto;
   width: 100%;
-  justify-content: center;
   }
 
 #summary,
 #experiences,
 #hobbies {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   align-items: flex-start;
 
 }
