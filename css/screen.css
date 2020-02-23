@@ -90,23 +90,32 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-#about {
+#about,
+#work,
+#hobby {
   display: flex;
   flex-direction: row;
   }
-#about p {
+#about,
+#work,
+#hobby p {
   flex: 1 0 100px;
   }
   flex-wrap: wrap;
   align-items: flex-start;
   }
-#about h2 {
+#about,
+#work,
+#hobby h2 {
   flex: 0 0 auto;
   width: 100%;
   }
-#about img {
+#about,
+#work,
+#hobby img {
   flex: 1 0 200px;
 }
+
 }
 /* this worked without media query - tho was not a good set up and would need fixing
 .about {
