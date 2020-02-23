@@ -32,7 +32,6 @@ h2 {
   color: pink;
   font-size: 2em; /*32px / 16 = 2em*/
   font-weight: bold;
-  padding-bottom: 1em;
   padding-top: 1em;
   text-align: center;
 }
@@ -89,53 +88,44 @@ img {
 
 /*state styles */
 @media screen and (min-width: 500px) {
-/*commented out to try grid instead
-#about,
-#work,
-#hobby {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: flex-start;
-
-}
-#about,
-#work,
-#hobby {
-  display: flex;
-  flex-direction: row;
-  }
-#about,
-#work,
-#hobby p {
-  flex: 1 0 100px;
-  margin-left: 20px;
-  }
-}
-
-#about,
-#work,
-#hobby h2 {
-  flex: 0 0 auto;
-  width: 100%;
-  justify-content: center;
-  }
-#about,
-#work,
-#hobby img {
-  flex: 1 0 200px;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-}
-*/
-
 #about,
 #work,
 #hobby {
   display: grid;
   margin: 2em;
-  grid-template-columns: 1fr 1fr 1fr;
+  column-width: 200px;
+  column-gap: 2em;
   }
-  */
+#about,
+#work,
+#hobby h2 {
+  width: 100%;
+  justify-content: center;
+  }
+
+#summary,
+#experiences,
+#hobbies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
+
+}
+#summary,
+#experiences,
+#hobbies {
+  display: flex;
+  flex-direction: row;
+  }
+#summary,
+#experiences,
+#hobbies p {
+  flex: 1 0 100px;
+  margin-left: 20px;
+  }
+#summary,
+#experiences,
+#hobbies img {
+  flex: 1 0 200px;
+}
+}
