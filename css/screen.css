@@ -78,6 +78,7 @@ img {
   padding-bottom: .5em;
   padding-top: .5em;
 }
+/*
 #about,
 #work,
 #hobby {
@@ -85,6 +86,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: flex-start;
 }
+*/
 
 /*state styles */
 @media screen and (min-width: 500px) {
@@ -96,9 +98,9 @@ img {
   column-width: 200px;
   column-gap: 2em;
   }*/
-#summary,
-#experiences,
-#hobbies h2 {
+#about,
+#work,
+#hobby h2 {
   flex: 0 0 auto;
   width: 100%;
   }
@@ -109,7 +111,6 @@ img {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-
 }
 #summary,
 #experiences,
