@@ -11,6 +11,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   background-color: black;
   font-family: "fahkwang", helvetica, arial, sans-serif;
+  margin: 20px;
   padding: 0.5em;
 }
 header {
@@ -46,6 +47,7 @@ h4 {
   color: skyblue;
   font-size: 1.25em;
   padding-bottom: .5em;
+  text-align: center;
 }
 p {
   color: lightslategrey;
@@ -75,11 +77,6 @@ img {
 }
 
 
-.projects h4 {
-  font-weight: bold;
-  padding-bottom: .5em;
-  padding-top: .5em;
-}
 /*state styles */
 main {
   display: flex;
@@ -89,12 +86,34 @@ main {
 }
 .summary p {
   flex: 1 0 100px;
-  margin-left: 20px;
   flex-wrap: wrap;
   }
 .summary img {
-    flex: 1 0 100px;
+  flex: 1 0 100px;
   }
+
+.wp img{
+  padding: 10px;
+  align-items: center;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hobbies p {
+  flex: 1 0 100px;
+  flex-wrap: wrap;
+  }
+.hobbies img {
+  flex: 1 0 100px;
+  }
+
+.hobbies img{
+  padding: 10px;
+  align-items: center;
+}
 
 @media screen and (min-width: 500px) {
   .summary {
@@ -111,6 +130,30 @@ main {
       flex: 1 0 200px;
       align-self: flex-start;
         }
+  .wp {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+  .wp img {
+    flex: 1 0 100px;
+    align-self: flex-start;
+    flex-wrap: nowrap;
+    }
+  .hobbies {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+  .hobbies p {
+      flex: 1 0 100px;
+      margin-left: 20px;
+  }
+  .hobbies img {
+      flex: 1 0 200px;
+  }
   }
 
 
