@@ -90,48 +90,29 @@ img {
   display: flex;
   flex-direction: row;
 }*/
-section {
+article {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-#about,
-#work,
-#hobby {
-  flex: 0 0 auto;
-  width: 100%;
-}
-#about,
-#work,
-#hobby p {
+article p {
   flex: 1 0 100px;
   margin-left: 20px;
   }
-  #about,
-  #work,
-  #hobby img {
+article img {
     flex: 1 0 200px;
   }
 
 @media screen and (min-width: 500px) {
-  section {
+  article {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
   }
-  #about,
-  #work,
-  #hobby {
-    flex: 0 0 auto;
-    width: 100%;
-  }
-  #about,
-  #work,
-  #hobby img {
-    flex: 1 0 200px;
-  }
-}
+
+
+
 
 /*state styles
 @media screen and (min-width: 500px) {
