@@ -20,6 +20,7 @@ h1,
 h2,
 h3 {
   text-align: center;
+  padding-bottom: .25em;
 }
 h1 {
   color: hotpink;
@@ -33,7 +34,6 @@ h2 {
   font-size: 2em; /*32px / 16 = 2em*/
   font-weight: bold;
   padding-top: 1em;
-  text-align: center;
 }
 
 h3 {
@@ -81,103 +81,57 @@ img {
 
 
 
+
 /*state styles */
-.summary, {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 100px);
-  grid-template-areas:
-    "a a a";
-  grid-gap: 20px;
-  align-items: start;
-}
-.summary h2 {
-  grid-area: a;
-  align-self: center;
-  padding-bottom: 20px;
-}
-.experiences, {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 100px);
-  grid-template-areas:
-    "a a a";
-  grid-gap: 20px;
-  align-items: start;
-}
-.experiences h2 {
-  grid-area: a;
-  align-self: center;
-  padding-bottom: 20px;
-}
-.hobbies, {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 100px);
-  grid-template-areas:
-    "a a a";
-  grid-gap: 20px;
-  align-items: start;
-}
-.hobbies h2 {
-  grid-area: a;
-  align-self: center;
-  padding-bottom: 20px;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* commenting all the below out to try grid options from book
 #about,
 #work,
 #hobby {
   display: flex;
   flex-direction: row;
-}
-.summary,
-.experiences,
-.hobbies {
+}*/
+section {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
+#about,
+#work,
+#hobby {
+  flex: 0 0 auto;
+  width: 100%;
+}
+#about,
+#work,
+#hobby p {
+  flex: 1 0 100px;
+  margin-left: 20px;
+  }
+  #about,
+  #work,
+  #hobby img {
+    flex: 1 0 200px;
+  }
 
-
+@media screen and (min-width: 500px) {
+  section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #about,
+  #work,
+  #hobby {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  #about,
+  #work,
+  #hobby img {
+    flex: 1 0 200px;
+  }
+}
 
 /*state styles
 @media screen and (min-width: 500px) {
