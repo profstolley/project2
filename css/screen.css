@@ -49,6 +49,7 @@ h4 {
 }
 p {
   color: lightslategrey;
+  display: block;
   font-size: 1em;
   font-style: normal;
   font-weight: normal;
@@ -73,42 +74,43 @@ img {
   max-width: 100%;
 }
 
+
 .projects h4 {
   font-weight: bold;
   padding-bottom: .5em;
   padding-top: .5em;
 }
-
-
-
-
 /*state styles */
-/* commenting all the below out to try grid options from book
-#about,
-#work,
-#hobby {
-  display: flex;
-  flex-direction: row;
-}*/
-article {
+.summary {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-article p {
+.summary p {
   flex: 1 0 100px;
   margin-left: 20px;
+  flex-wrap: wrap;
   }
-article img {
-    flex: 1 0 200px;
+.summary img {
+    flex: 1 0 100px;
   }
 
 @media screen and (min-width: 500px) {
-  article {
+  .summary {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+  .summary p {
+      flex: 1 0 100px;
+      margin-left: 20px;
+      }
+  .summary img {
+      flex: 1 0 200px;
+      align-self: flex-start;
+        }
   }
 
 
