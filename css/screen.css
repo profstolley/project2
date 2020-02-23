@@ -63,7 +63,6 @@ li {
   font-style: normal;
   font-weight: normal;
   line-height: 1.25em; /*20px / 16 = 1.25em*/
-  text-justify: left;
 }
 
 /* Modular styles and Responsive Media */
@@ -86,9 +85,13 @@ img {
 
 /*state styles */
 @media screen and (min-width: 500px) {
-main {
+#about,
+#work,
+#hobby {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 #about,
 #work,
@@ -100,15 +103,14 @@ main {
 #work,
 #hobby p {
   flex: 1 0 100px;
-  }
-  flex-wrap: wrap;
-  align-items: flex-start;
+  margin-left: 20px;
   }
 #about,
 #work,
 #hobby h2 {
   flex: 0 0 auto;
   width: 100%;
+  justify-content: center;
   }
 #about,
 #work,
@@ -117,6 +119,7 @@ main {
 }
 
 }
+
 /* this worked without media query - tho was not a good set up and would need fixing
 .about {
   display: grid;
