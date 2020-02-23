@@ -34,6 +34,7 @@ h2 {
   font-weight: bold;
   padding-bottom: 1em;
   padding-top: 1em;
+  text-align: center;
 }
 
 h3 {
@@ -72,26 +73,30 @@ img {
   display:block;
   max-width: 100%;
 }
-.me,
-.ltg {
-  width: 100%;
-}
 
 .projects h4 {
   font-weight: bold;
   padding-bottom: .5em;
   padding-top: .5em;
 }
-
-/*state styles */
-@media screen and (min-width: 500px) {
 #about,
 #work,
 #hobby {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  flex-wrap: wrap;
   align-items: flex-start;
+}
+
+/*state styles */
+@media screen and (min-width: 500px) {
+/*commented out to try grid instead
+#about,
+#work,
+#hobby {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
+
 }
 #about,
 #work,
@@ -105,6 +110,8 @@ img {
   flex: 1 0 100px;
   margin-left: 20px;
   }
+}
+
 #about,
 #work,
 #hobby h2 {
@@ -116,15 +123,19 @@ img {
 #work,
 #hobby img {
   flex: 1 0 200px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
-
 }
+*/
 
-/* this worked without media query - tho was not a good set up and would need fixing
-.about {
+#about,
+#work,
+#hobby {
   display: grid;
   margin: 2em;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   }
   */
